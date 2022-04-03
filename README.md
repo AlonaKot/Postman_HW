@@ -5,7 +5,6 @@
 `Port: 5005`
 
 1)
-
 + Method: `GET`
 + EndPoint: `/get_method`
 + request url params: 
@@ -13,18 +12,14 @@
  name: str
  age: int
 ```
-
-response: 
++ response: 
 ```
 [
     “Str”,
     “Str”
 ]
 ```
-
-
 2)
-
 + Method: `POST`
 + EndPoint: `/user_info_3`
 + request form data: 
@@ -33,8 +28,7 @@ response:
  age: int
  salary: int
  ```
-
-response: 
++ response: 
 ```
 {'name': name,
           'age': age,
@@ -42,7 +36,6 @@ response:
           'family': {'children': [['Alex', 24], ['Kate', 12]],
                      'u_salary_1_5_year': salary * 4}}
 ````
-
 3)
 + Method: `GET`
 + EndPoint: `/object_info_1`
@@ -52,14 +45,13 @@ response:
  age: int
  weight: int
 ```
-response: 
++ response: 
 ```
 {'name': name,
           'age': age,
           'daily_food': weight * 0.012,
           'daily_sleep': weight * 2.5}
 ```
-
 4)
 + Method: `GET`
 + EndPoint: `/object_info_2`
@@ -69,7 +61,7 @@ response:
  age: int
  salary: int
 ```
-response: 
++ response: 
 ```
 {'start_qa_salary': salary,
           'qa_salary_after_6_months': salary * 2,
@@ -81,7 +73,6 @@ response:
                      'u_salary_5_years': salary * 4.2}
           }
 ```
-
 5)
 + Method: `GET`
 + EndPoint: `/object_info_3`
@@ -91,7 +82,7 @@ response:
  age: int
  salary: int
 ```
-response:
++ response:
 ``` 
 {'name': name,
           'age': age,
@@ -104,7 +95,6 @@ response:
                      'u_salary_1_5_year': salary * 4}
           }
 ```
-
 6)
 + Method: `GET`
 + EndPoint: `/object_info_4`
@@ -114,14 +104,13 @@ response:
  age: int
  salary: int
 ```
-response:
++ response:
 ``` 
 {'name': name,
           'age': int(age),
           'salary': [salary, str(salary * 2), str(salary * 3)]}
 
 ```
-
 7)
 + Method: `POST`
 + EndPoint: `/user_info_2`
